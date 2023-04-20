@@ -2,13 +2,13 @@ version: 0.2
 
 env:
   variables:
-    PROJECT: AspNetMvcSampleApp
+    PROJECT: HelloWorld
     DOTNET_FRAMEWORK: 4.8
 phases:
   build:
     commands:
       - nuget restore
-      - msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployOnBuild=True /p:Platform=AnyCPU /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl=bin\app.publish\ 
+      - msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployOnBuild=True /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl=bin\app.publish\ 
 artifacts:
   files:
     - '.\HelloWorld\bin\app.publish\**'
