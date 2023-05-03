@@ -11,4 +11,5 @@ phases:
       - msbuild $env:PROJECT.sln /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployOnBuild=True /p:DeployDefaultTarget=WebPublish /p:Platform="Any CPU" /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl=bin\appPublish\
 artifacts:
   files:
-    - 'HelloWorld\bin\appPublish'
+    - '**/*'
+  name: builds/$CODEBUILD_BUILD_NUMBER/my-artifacts
