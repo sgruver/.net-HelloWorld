@@ -12,4 +12,4 @@ phases:
 artifacts:
   files:
     - 'HelloWorld/bin/appPublish/*'
-  name: gruver_build/$CODEBUILD_BUILD_NUMBER/Source2Artifact
+  name: gruver_builds/HelloWorld
