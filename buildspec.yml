@@ -13,4 +13,4 @@ phases:
 artifacts:
   files:
     - 'HelloWorld/bin/appPublish/**/*'
-  name: gruver-builds/HelloWorld-$(date +%Y-%m-%d)
+  name: gruver-builds/HelloWorld-$(date +"%Y-%m-%d")
