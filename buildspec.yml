@@ -13,4 +13,4 @@ phases:
 artifacts:
   files:
     - 'HelloWorld/bin/appPublish/**/*'
-  name: gruver-builds/HelloWorld-$(Get-Date -UFormat "%Y%m%d-%H%M%S")
+  name: gruver-builds/HelloWorld-$(Get-Date -UFormat "%Y%m%d")
